@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState } from "react";
-import Logo from "../Assets/Logo.svg";
+import Logo from "../Assets/Logo.png";
 import { BsCart2 } from "react-icons/bs";
 import { HiOutlineBars3 } from "react-icons/hi2";
 import Box from "@mui/material/Box";
@@ -13,33 +13,44 @@ import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import HomeIcon from "@mui/icons-material/Home";
 import InfoIcon from "@mui/icons-material/Info";
-import CommentRoundedIcon from "@mui/icons-material/CommentRounded";
+import Groups from "@mui/icons-material/Groups";
+import VisibilityRoundedIcon from '@mui/icons-material/VisibilityRounded';
+import TrackChangesRoundedIcon from '@mui/icons-material/TrackChangesRounded';
 import PhoneRoundedIcon from "@mui/icons-material/PhoneRounded";
-import ShoppingCartRoundedIcon from "@mui/icons-material/ShoppingCartRounded";
+import LaptopChromebookRoundedIcon from '@mui/icons-material/LaptopChromebookRounded';
 
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
   const menuOptions = [
     {
-      text: "Home",
+      text: "Inicio",
       icon: <HomeIcon />,
     },
     {
-      text: "About",
+      text: "Sobre nosotros",
       icon: <InfoIcon />,
     },
     {
-      text: "Testimonials",
-      icon: <CommentRoundedIcon />,
+      text: "Misión",
+      icon: <TrackChangesRoundedIcon />,
     },
     {
-      text: "Contact",
+      text: "Visión",
+      icon: <VisibilityRoundedIcon />,
+    },
+    {
+      text: "Proyectos",
+      icon: <LaptopChromebookRoundedIcon />,
+    },
+    {
+      text: "Miembros",
+      icon: <Groups />,
+    },
+    {
+      text: "Contáctanos",
       icon: <PhoneRoundedIcon />,
     },
-    {
-      text: "Cart",
-      icon: <ShoppingCartRoundedIcon />,
-    },
+
   ];
   return (
     <nav>
@@ -47,14 +58,18 @@ const Navbar = () => {
         <img src={Logo} alt="" />
       </div>
       <div className="navbar-links-container">
-        <a href="">Home</a>
-        <a href="">About</a>
-        <a href="">Testimonials</a>
-        <a href="">Contact</a>
-        <a href="">
-          <BsCart2 className="navbar-cart-icon" />
+        <a href="">Inicio</a>
+        <a href="">Sobre nosotros</a>
+        <a href="">Misión</a>
+        <a href="">Visión</a>
+        <a href="">Nuestros proyectos</a>
+        <a href="">Miembros</a>
+        <a href="">Contáctanos</a>
+
+        <a href="#Contact">
+          <button className="primary-button">Regístrate</button>
         </a>
-        <button className="primary-button">Bookings Now</button>
+
       </div>
       <div className="navbar-menu-container">
         <HiOutlineBars3 onClick={() => setOpenMenu(true)} />

@@ -50,11 +50,9 @@ nav {
   font-weight: 600;
   transition: 0.2s;
 }
-.navbar-cart-icon {
-  font-size: 1.15rem;
-}
 .primary-button:hover {
-  background-color: rgb(234, 234, 234);
+  background-color: #219424;
+  color: white;
 }
 .navbar-menu-container svg {
   font-size: 1.5rem;
@@ -89,6 +87,19 @@ nav {
   /* line-height: 5rem; */
   max-width: 600px;
 }
+.about-section-text-container1  {
+  font-size: clamp(2rem, 5vw, 4rem);
+  color: #4c4c4c;
+  /* line-height: 5rem; */
+  max-width: 600px;
+  padding-top: 200px;
+}
+.about-section-text-container .primary-heading {
+  font-size: clamp(2rem, 5vw, 4rem);
+  color: #4c4c4c;
+  /* line-height: 5rem; */
+  max-width: 600px;
+}
 .primary-text {
   font-size: clamp(1rem, 3vw, 1.5rem);
   max-width: 500px;
@@ -97,7 +108,7 @@ nav {
 }
 .secondary-button {
   padding: 1rem 2.5rem;
-  background-color: #fe9e0d;
+  background-color: #219424;
   outline: none;
   border: none;
   border-radius: 5rem;
@@ -115,7 +126,7 @@ nav {
   font-size: 1.5rem;
 }
 .secondary-button:hover {
-  background-color: #e48f0f;
+  background-color: #218024;
 }
 .about-section-container {
   margin-top: 20rem;
@@ -141,7 +152,7 @@ nav {
 }
 .primary-subheading {
   font-weight: 700;
-  color: #fe9e0d;
+  color: #219424;
   font-size: 1.15rem;
 }
 .about-buttons-container {
@@ -266,6 +277,16 @@ nav {
 .work-section-top p {
   text-align: center;
   max-width: 600px !important;
+}
+.MisionAndVision p {
+  text-align: center;
+  max-width: 600px !important;
+}
+.MisionAndVision {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .work-section-top h1 {
   max-width: 700px !important;
