@@ -22,7 +22,9 @@ const About = () => {
           Nos especializamos en el desarrollo de soluciones tecnológicas que aborden desafíos actuales, promoviendo el trabajo en equipo y la exploración de nuevas tendencias.
         </p>
         <div className="about-buttons-container">
-          <button className="secondary-button">Conocer más</button>
+          <a href="#MisionAndVision">
+            <button className="secondary-button">Conocer más</button>
+          </a>
           <button className="watch-video-button">
             <BsFillPlayCircleFill /> Ver Video
           </button>

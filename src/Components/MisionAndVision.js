@@ -2,7 +2,7 @@ import React from 'react'
 
 const MisionAndVision = () => {
   return (
-    <div className="work-section-wrapper">
+    <div id="MisionAndVision" className="work-section-wrapper" >
       <div className="work-section-top">
         <p className="primary-subheading"></p>
         <h2 className="primary-heading">Misión</h2>

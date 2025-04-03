@@ -14,8 +14,6 @@ import ListItemText from "@mui/material/ListItemText";
 import HomeIcon from "@mui/icons-material/Home";
 import InfoIcon from "@mui/icons-material/Info";
 import Groups from "@mui/icons-material/Groups";
-import VisibilityRoundedIcon from '@mui/icons-material/VisibilityRounded';
-import TrackChangesRoundedIcon from '@mui/icons-material/TrackChangesRounded';
 import PhoneRoundedIcon from "@mui/icons-material/PhoneRounded";
 import LaptopChromebookRoundedIcon from '@mui/icons-material/LaptopChromebookRounded';
 
@@ -29,14 +27,6 @@ const Navbar = () => {
     {
       text: "Sobre nosotros",
       icon: <InfoIcon />,
-    },
-    {
-      text: "Misión",
-      icon: <TrackChangesRoundedIcon />,
-    },
-    {
-      text: "Visión",
-      icon: <VisibilityRoundedIcon />,
     },
     {
       text: "Proyectos",
@@ -60,8 +50,7 @@ const Navbar = () => {
       <div className="navbar-links-container">
         <a href="">Inicio</a>
         <a href="">Sobre nosotros</a>
-        <a href="">Misión</a>
-        <a href="">Visión</a>
+
         <a href="">Nuestros proyectos</a>
         <a href="">Miembros</a>
         <a href="">Contáctanos</a>
