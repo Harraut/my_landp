@@ -4,6 +4,9 @@
   box-sizing: border-box;
   font-family: "Reem Kufi", sans-serif !important;
 }
+a {
+  text-decoration: none;
+}
 img {
   max-width: 100%;
   height: auto;
@@ -206,29 +209,48 @@ nav {
   font-size: 1.3rem;
   padding: 0.5rem 1rem;
 }
+
 .footer-wrapper {
   margin: 6rem 0rem;
+  padding:2rem;
   display: flex;
   margin-top: 10rem;
+  background-color:white;
+  border-radius: 1rem;
+
 }
 .footer-logo-container {
   max-width: 110px;
+  
 }
 .footer-icons {
   margin-top: 2.5rem;
 }
+.footer-icons-text {
+  padding-bottom:0.8rem ;
+  color: #4c4c4c;
+
+}
 .footer-icons svg {
   font-size: 1.5rem;
-  margin-right: 1.25rem;
+  margin-right: 0.5rem;
   color: #585858;
 }
 /* .footer-section-one {
   border: 2px solid blue;
 } */
+.footer-section-one {
+  margin-left:0.5rem
+
+}
 .footer-section-two {
   flex: 1;
   display: flex;
   justify-content: flex-end;
+  margin-left:0.5rem
+}
+.footer-section-columns a {
+  padding-bottom: 0.6rem
 }
 .footer-section-columns {
   display: flex;
@@ -236,12 +258,13 @@ nav {
   min-width: 190px;
 }
 .footer-section-columns span {
-  margin: 0.25rem 0rem;
+  padding-bottom: 0.6rem;
+  margin: 0 0.25rem;
   font-weight: 600;
   color: #4c4c4c;
   cursor: pointer;
 }
-.testimonial-section-bottom {
+.projects-section-bottom {
   margin-top: 2rem;
   background-color: white;
   padding: 1.5rem 2rem;
@@ -253,22 +276,17 @@ nav {
   flex-direction: column;
   text-align: center;
 }
-.testimonial-section-bottom {
+.projects-section-bottom {
   margin: 2rem auto;
 }
-.testimonial-section-bottom p {
+.projects-section-bottom p {
   font-weight: 700;
   color: #515151;
   max-width: 500px;
   font-size: 1.1rem;
   margin: 2rem 0rem;
 }
-.testimonials-stars-container svg {
-  margin: 0rem 0.25rem;
-  font-size: 1.5rem;
-  color: #fe9e0d;
-}
-.testimonial-section-bottom h2 {
+.projects-section-bottom h2 {
   margin-top: 1.5rem;
 }
 .work-section-wrapper {

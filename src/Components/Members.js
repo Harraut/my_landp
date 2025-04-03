@@ -15,6 +15,16 @@ const Members = () => {
     },
     {
       icon: <PersonRoundedIcon />,
+      title: "Nombre3",
+      text: "Lorem ipsum dolor sit amet consectetur. Maecenas orci et ",
+    },
+    {
+      icon: <PersonRoundedIcon />,
+      title: "Nombre4",
+      text: "Lorem ipsum dolor sit amet consectetur. Maecenas orci et ",
+    },
+    {
+      icon: <PersonRoundedIcon />,
       title: "Nombre5",
       text: "Lorem ipsum dolor sit amet consectetur. Maecenas orci et lorem ipsum",
     },
@@ -26,7 +36,7 @@ const Members = () => {
   ];
 
   return (
-    <div className="work-section-wrapper">
+    <div className="work-section-wrapper" id="members-section-wrapper">
       <div className="work-section-top">
         <p className="primary-subheading">Miembros</p>
         <h2 className="primary-heading">Nuestros Miembros</h2>

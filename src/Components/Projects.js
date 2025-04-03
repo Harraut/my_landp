@@ -1,9 +1,9 @@
 import React from "react";
 import ProfilePic from "../Assets/john-doe-image.png";
 
-const Testimonial = () => {
+const Projects = () => {
   return (
-    <div className="work-section-wrapper">
+    <div className="work-section-wrapper" id="work-section-wrapper">
       <div className="work-section-top">
         <p className="primary-subheading">Proyectos</p>
         <h2 className="primary-heading">Nuestros Proyectos</h2>
@@ -12,7 +12,7 @@ const Testimonial = () => {
           elit. Dolor turpis molestie dui magnis facilisis at fringilla quam.
         </p>
       </div>
-      <div className="testimonial-section-bottom">
+      <div className="projects-section-bottom">
         <img src={ProfilePic} alt="" />
         <p>
           Lorem ipsum dolor sit amet consectetur. Non tincidunt magna non et
@@ -21,7 +21,7 @@ const Testimonial = () => {
         <h2>Proyecto 1</h2>
       </div>
 
-      <div className="testimonial-section-bottom">
+      <div className="projects-section-bottom">
         <img src={ProfilePic} alt="" />
         <p>
           Lorem ipsum dolor sit amet consectetur. Non tincidunt magna non et
@@ -30,7 +30,7 @@ const Testimonial = () => {
         <h2>Proyecto 2</h2>
       </div>
 
-      <div className="testimonial-section-bottom">
+      <div className="projects-section-bottom">
         <img src={ProfilePic} alt="" />
         <p>
           Lorem ipsum dolor sit amet consectetur. Non tincidunt magna non et
@@ -42,4 +42,4 @@ const Testimonial = () => {
   );
 };
 
-export default Testimonial;
+export default Projects;

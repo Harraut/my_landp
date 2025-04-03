@@ -11,7 +11,7 @@ const Home = () => {
         <div className="home-bannerImage-container">
 
         </div>
-        <div className="home-text-section">
+        <div className="home-text-section" id="home-text-section">
           <h1 className="primary-heading">
             Semillero de Investigación Fábrica TIC
           </h1>

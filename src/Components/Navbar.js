@@ -29,7 +29,7 @@ const Navbar = () => {
       icon: <InfoIcon />,
     },
     {
-      text: "Proyectos",
+      text: "Nuestros Proyectos",
       icon: <LaptopChromebookRoundedIcon />,
     },
     {
@@ -48,12 +48,11 @@ const Navbar = () => {
         <img src={Logo} alt="" />
       </div>
       <div className="navbar-links-container">
-        <a href="">Inicio</a>
-        <a href="">Sobre nosotros</a>
-
-        <a href="">Nuestros proyectos</a>
-        <a href="">Miembros</a>
-        <a href="">Contáctanos</a>
+        <a href="#home-text-section">Inicio</a>
+        <a href="#about-section-container">Sobre nosotros</a>
+        <a href="#work-section-wrapper">Nuestros proyectos</a>
+        <a href="#members-section-wrapper">Miembros</a>
+        <a href="#footer-wrapper">Contáctanos</a>
 
         <a href="#Contact">
           <button className="primary-button">Regístrate</button>

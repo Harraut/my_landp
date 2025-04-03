@@ -1,8 +1,8 @@
 import "./App.css";
 import Home from "./Components/Home";
 import About from "./Components/About";
-import Work from "./Components/Members";
-import Testimonial from "./Components/Testimonial";
+import Members from "./Components/Members";
+import Projects from "./Components/Projects";
 import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
 import MisionAndVision from "./Components/MisionAndVision";
@@ -13,8 +13,8 @@ function App() {
       <Home />
       <About />
       <MisionAndVision />
-      <Work />
-      <Testimonial />
+      <Members />
+      <Projects />
       <Contact />
       <Footer />
     </div>
