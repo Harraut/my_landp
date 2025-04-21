@@ -1,9 +1,7 @@
 import React from "react";
 import Logo from "../Assets/Logo.png";
-import { BsTwitter } from "react-icons/bs";
-import { SiLinkedin } from "react-icons/si";
-import { BsYoutube } from "react-icons/bs";
-import { FaFacebookF } from "react-icons/fa";
+import { SiGithub } from "react-icons/si";
+import { BsInstagram  } from "react-icons/bs";
 
 const Footer = () => {
   return (
@@ -14,21 +12,14 @@ const Footer = () => {
         </div>
         <div className="footer-icons">
           <div className="footer-icons-text">
-          <p><span>Síguenos en:</span></p>
+            <p><span>Síguenos en:</span></p>
           </div>
-          <a href="">
-          <BsTwitter />
-          </a>
-          <a href="">
-          <SiLinkedin />
-          </a>
-          <a href="">
-          <BsYoutube />
-          </a>
-          <a href="">
-          <FaFacebookF />
-          </a>
-
+            <a href="">
+              < SiGithub />
+            </a>
+            <a href="">
+              <BsInstagram  />
+            </a>
         </div>
       </div>
       <div className="footer-section-two">
@@ -55,10 +46,9 @@ const Footer = () => {
         </div>
 
         <div className="footer-section-columns">
-          <span>244-5333-7783</span>
           <span>fabricaticsena@gmail.com</span>
           <span>Carrera 54 No. 68 – 80.</span>
-          <span>080002. Barranquilla - Atlántico, Colombia.</span>
+          <span> Barranquilla - Atlántico, Colombia.</span>
         </div>
         <div className="footer-section-columns">
           <span>Terms & Conditions</span>

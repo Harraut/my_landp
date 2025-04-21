@@ -1,7 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState } from "react";
 import Logo from "../Assets/Logo.png";
-import { BsCart2 } from "react-icons/bs";
 import { HiOutlineBars3 } from "react-icons/hi2";
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
@@ -16,6 +15,7 @@ import InfoIcon from "@mui/icons-material/Info";
 import Groups from "@mui/icons-material/Groups";
 import PhoneRoundedIcon from "@mui/icons-material/PhoneRounded";
 import LaptopChromebookRoundedIcon from '@mui/icons-material/LaptopChromebookRounded';
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
@@ -23,22 +23,27 @@ const Navbar = () => {
     {
       text: "Inicio",
       icon: <HomeIcon />,
+      path: "/"
     },
     {
       text: "Sobre nosotros",
       icon: <InfoIcon />,
+      path: "/"
     },
     {
       text: "Nuestros Proyectos",
       icon: <LaptopChromebookRoundedIcon />,
+      path: "/projects"
     },
     {
       text: "Miembros",
       icon: <Groups />,
+      path: "/members"
     },
     {
       text: "Contáctanos",
       icon: <PhoneRoundedIcon />,
+      path: "/"
     },
 
   ];
@@ -48,10 +53,10 @@ const Navbar = () => {
         <img src={Logo} alt="" />
       </div>
       <div className="navbar-links-container">
-        <a href="#home-text-section">Inicio</a>
+        <Link to="/">Inicio</Link>
         <a href="#about-section-container">Sobre nosotros</a>
-        <a href="#work-section-wrapper">Nuestros proyectos</a>
-        <a href="#members-section-wrapper">Miembros</a>
+        <Link to="/projects">Nuestros proyectos</Link>
+        <Link to="/members">Miembros</Link>
         <a href="#footer-wrapper">Contáctanos</a>
 
         <a href="#Contact">
@@ -62,6 +67,7 @@ const Navbar = () => {
       <div className="navbar-menu-container">
         <HiOutlineBars3 onClick={() => setOpenMenu(true)} />
       </div>
+
       <Drawer open={openMenu} onClose={() => setOpenMenu(false)} anchor="right">
         <Box
           sx={{ width: 250 }}
@@ -72,7 +78,7 @@ const Navbar = () => {
           <List>
             {menuOptions.map((item) => (
               <ListItem key={item.text} disablePadding>
-                <ListItemButton>
+                <ListItemButton component={Link} to={item.path}>
                   <ListItemIcon>{item.icon}</ListItemIcon>
                   <ListItemText primary={item.text} />
                 </ListItemButton>

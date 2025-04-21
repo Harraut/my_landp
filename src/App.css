@@ -291,6 +291,7 @@ nav {
 }
 .work-section-wrapper {
   margin-top: 15rem;
+  position: relative;
 }
 .work-section-top p {
   text-align: center;
@@ -316,18 +317,11 @@ nav {
   flex-direction: column;
 }
 .work-section-info {
-  width: 290px;
-  min-height: 350px;
-  background-color: white;
-  padding: 1rem 2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  border-radius: 1rem;
-  color: #505050;
-  margin: 1rem 2rem;
+  flex: 1 1 calc(33% - 20px); /* Mostrar 3 elementos a la vez */
+  padding: 10px;
+  margin: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
 }
 .work-section-info h2 {
   margin: 1rem 0rem;
@@ -344,6 +338,63 @@ nav {
   display: flex;
   align-items: center;
   font-weight: 600;
+}
+.slider-buttons {
+  position: absolute;
+  top: 50%; /* Centrar verticalmente */
+  left: 0;
+  right: 0;
+  transform: translateY(-50%); /* Ajustar para centrar el contenedor en el eje Y */
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 15px;
+  pointer-events: none; /* Asegura que los íconos respondan a eventos y no el contenedor */
+}
+
+.slider-button {
+  color: white;
+  border: none;
+  font-size: 3rem; /* Tamaño del ícono */
+  cursor: pointer;
+  pointer-events: auto; /* Habilita el clic en los íconos */
+  transition: transform 0.3s ease;
+  background-color: #219424;
+  outline: none;
+  border: none;
+  border-radius: 5rem;
+ 
+
+}
+
+.slider-button:disabled {
+  color: #ccc;
+  cursor: not-allowed;
+}
+
+.slider-button:hover {
+  transform: scale(1.1); /* Efecto al pasar el ratón */
+}
+
+@media screen and (max-width: 768px) {
+  /* Ajustar el tamaño de las flechas en pantallas pequeñas */
+  .slider-button {
+    font-size: 1.5rem;
+  }
+
+  .work-section-info {
+    flex: 1 1 calc(50% - 20px); /* Mostrar 2 elementos a la vez en pantallas pequeñas */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .slider-button {
+    font-size: 1.2rem; /* Ajustar aún más el tamaño de las flechas */
+  }
+
+  .work-section-info {
+    flex: 1 1 100%; /* Mostrar 1 solo elemento a la vez en pantallas muy pequeñas */
+  }
 }
 
 @media (max-width: 1000px) {

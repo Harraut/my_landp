@@ -6,17 +6,25 @@ import Projects from "./Components/Projects";
 import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
 import MisionAndVision from "./Components/MisionAndVision";
+import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
+import Navbar from "./Components/Navbar";
 
 function App() {
   return (
     <div className="App">
-      <Home />
-      <About />
-      <MisionAndVision />
-      <Members />
-      <Projects />
-      <Contact />
-      <Footer />
+      <Router>
+
+        <Navbar />
+
+        <Routes>
+          <Route path="/" element={<><Home /> <About /> <MisionAndVision /> <Contact /> </>} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/members" element={<Members />} />
+        </Routes>
+        
+        <Footer />
+        
+      </Router>
     </div>
   );
 }

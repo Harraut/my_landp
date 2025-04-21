@@ -1,5 +1,6 @@
-import React from "react";
+import React, {useState} from "react";
 import PersonRoundedIcon from '@mui/icons-material/PersonRounded';
+import { ArrowBack, ArrowForward } from '@mui/icons-material';
 
 const Members = () => {
   const workInfoData = [
@@ -33,7 +34,52 @@ const Members = () => {
       title: "Nombre6",
       text: "Lorem ipsum dolor sit amet consectetur. Maecenas orci et lorem ipsum",
     },
+    {
+      icon: <PersonRoundedIcon />,
+      title: "Nombre7",
+      text: "Lorem ipsum dolor sit amet consectetur. Maecenas orci et sagittis duis elementum interdum facilisi bibendum.",
+    },
+    {
+      icon: <PersonRoundedIcon />,
+      title: "Nombre8",
+      text: "Lorem ipsum dolor sit amet consectetur. Maecenas orci et ",
+    },
+    {
+      icon: <PersonRoundedIcon />,
+      title: "Nombre9",
+      text: "Lorem ipsum dolor sit amet consectetur. Maecenas orci et ",
+    },
+    {
+      icon: <PersonRoundedIcon />,
+      title: "Nombre10",
+      text: "Lorem ipsum dolor sit amet consectetur. Maecenas orci et ",
+    },
+    {
+      icon: <PersonRoundedIcon />,
+      title: "Nombre11",
+      text: "Lorem ipsum dolor sit amet consectetur. Maecenas orci et lorem ipsum",
+    },
+    {
+      icon: <PersonRoundedIcon />,
+      title: "Nombre12",
+      text: "Lorem ipsum dolor sit amet consectetur. Maecenas orci et lorem ipsum",
+    }
+
   ];
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const nextSlide = () => {
+    if (currentIndex + 3 < workInfoData.length) {
+      setCurrentIndex(currentIndex + 3)
+    }
+  }
+
+  const prevSlide = () => {
+    if (currentIndex - 3 >=0) {
+      setCurrentIndex(currentIndex - 3)
+    }
+  }
 
   return (
     <div className="work-section-wrapper" id="members-section-wrapper">
@@ -45,7 +91,7 @@ const Members = () => {
         </p>
       </div>
       <div className="work-section-bottom">
-        {workInfoData.map((data, index) => (
+        {workInfoData.slice(currentIndex, currentIndex + 3).map((data, index) => (
           <div className="work-section-info" key={index}>
             <div className="info-boxes-img-container">
               {data.icon} 
@@ -55,6 +101,12 @@ const Members = () => {
           </div>
         ))}
       </div>
+
+      <div className="slider-buttons">
+        <ArrowBack onClick={prevSlide} disabled={currentIndex === 0}className="slider-button"/>
+        <ArrowForward onClick={nextSlide} disabled={currentIndex + 3 >= workInfoData.length} className="slider-button"/>
+      </div>
+
     </div>
   );
 };
