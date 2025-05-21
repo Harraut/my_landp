@@ -8,6 +8,8 @@ import Footer from "./Components/Footer";
 import MisionAndVision from "./Components/MisionAndVision";
 import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
 import Navbar from "./Components/Navbar";
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 function App() {
   return (
